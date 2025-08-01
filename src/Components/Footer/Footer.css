@@ -1,0 +1,101 @@
+footer {
+  z-index: 0;
+  width: 100%;
+  position: relative; /* Обязательно для правильной работы псевдоэлемента */
+  background: center center no-repeat;
+  background-image: url(./img/carousel-bg-1.jpg);
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* Копируем фон из основного элемента */
+  filter: brightness(25%);
+  z-index: -1; /* Это сделает псевдоэлемент фоновым слоем */
+}
+
+.footer-wrapper div h4 {
+  color: white;
+}
+.footer-wrapper div {
+  width: 300px;
+}
+.footer-wrapper {
+  padding: 80px 0px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.footer-wrapper .bx {
+  font-size: 1.1rem;
+  color: white;
+  padding-right: 5px;
+}
+.footer-wrapper div:nth-child(1) a {
+  color: red;
+}
+footer .footer-wrapper div p {
+  font-family: var(--f-ubuntu);
+  font-size: 1rem;
+  color: #f2f2f2;
+  font-weight: 400;
+  line-height: 1.5;
+}
+footer .footer-wrapper div li a {
+  font-family: var(--f-ubuntu);
+  font-size: 1rem;
+  color: #f2f2f2;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: all 0.3s linear;
+}
+footer .footer-wrapper div li a:hover {
+  transition: all 0.3s linear;
+
+  color: #d81324;
+}
+footer .hr {
+  color: white;
+  margin-bottom: 0px;
+}
+footer .hr div a {
+  text-decoration: none;
+
+  color: white;
+}
+footer .hr div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media only screen and (max-width: 950px) {
+  .footer-wrapper {
+    padding: 80px 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 50px;
+    justify-content: space-between;
+  }
+  .footer-wrapper div {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .footer-wrapper {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  .footer-wrapper {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

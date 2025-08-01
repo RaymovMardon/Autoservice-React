@@ -1,0 +1,13 @@
+#tabs{
+    width: 100%;
+}
+
+#tabs .tabs-first img{
+    width:30vw;
+}
+
+#tabs .tabs-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}

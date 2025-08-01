@@ -1,0 +1,82 @@
+#location{
+    width: 100%;
+    margin: 80px 0;
+}
+
+#location .loc-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loc-wrapper .first-wrap{
+    display: flex;
+    
+    margin: 20px 0;
+    gap: 25px;
+}
+
+.first-wrap .info-loc{
+    width: 44vw;
+    background-color: rgb(242, 242, 242);
+    padding: 24px;
+}
+
+.loc-wrapper iframe{
+    width: 90vw;
+    min-height: 356px;
+}
+
+.info-loc h5{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: var(--f-barlow);
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(11, 33, 84);
+}
+
+.loc-wrapper h6{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: var(--f-barlow);
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(216, 19, 36); 
+}
+
+.loc-wrapper h1{
+    font-size: 40px;
+    font-family: var(--f-barlow);
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(11, 33, 84);
+}
+
+.info-loc-p{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.info-loc-p p{
+    margin-bottom: 0px !important;
+    font-family: var(--f-ubuntu);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(89, 98, 119);
+}
+.bx-envelope:before {
+    color:  rgb(216, 19, 36);
+    font-size: larger;}
+
+    @media only screen and (max-width:750px) {
+        .loc-wrapper .first-wrap{
+            flex-direction: column;
+
+        }
+        .first-wrap .info-loc {
+            width: 90vw;}
+        .loc-wrapper h1 {
+            font-size: 27px;}
+    }

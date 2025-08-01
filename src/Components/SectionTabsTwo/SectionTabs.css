@@ -1,0 +1,94 @@
+#tabs {
+  width: 100%;
+  margin: 80px 0px;
+}
+#tabs a {
+  text-decoration: none;
+}
+#tabs .tabs-first img {
+  width: 30vw;
+}
+#tabs button:focus {
+  outline: none;
+  outline: none;
+}
+#tabs .tabs-second h3 {
+  font-family: var(--f-barlow);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0b2154;
+}
+#tabs .tabs-second p {
+  font-family: var(--f-ubuntu);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #596277;
+}
+.rs-nav-item.rs-nav-item-active {
+  position: relative;
+  color: white !important;
+  background-color: var(--color-red) !important;
+  font-family: var(--f-barlow);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.rs-tabs .rs-nav-vertical {
+  gap: 17px;
+}
+
+#tabs .rs-nav-item {
+  border-style: none;
+  width: 320px;
+  height: 70px;
+  background-color: #f2f2f2;
+  font-family: var(--f-barlow);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0b2154;
+  transition: all 0.3s linear;
+}
+#tabs .rs-nav-item:hover {
+  background-color: #3e3b3b26;
+  transition: all 0.3s linear;
+}
+.rs-tabs-vertical {
+  gap: 30px;
+}
+
+@media only screen and (max-width: 1250px) {
+  #tabs .rs-nav-item {
+    width: 25vw;
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .rs-tabs-vertical {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+  }
+  #tabs .rs-nav-item {
+    width: 85vw;
+    height: 70px;
+  }
+  #tabs .tabs-wrapper {
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #tabs .tabs-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  #tabs .tabs-first img {
+    width: 60vw;
+  }
+}

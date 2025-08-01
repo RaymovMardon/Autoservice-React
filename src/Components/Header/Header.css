@@ -1,0 +1,114 @@
+header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 0px 2px 35px 0px rgba(0, 0, 0, 0.12);
+}
+header .header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+header img {
+  height: 75px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 0px !important;
+}
+
+header nav ul li a {
+  font-family: var(--f-ubuntu);
+  font-size: 15px;
+  text-transform: uppercase;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  color: black;
+}
+header nav ul li:hover a {
+  color: #d81324;
+}
+header nav ul li:nth-child(1) a {
+  color: #d81324;
+}
+header .header-wrap .bars {
+  display: none;
+}
+.slide-box{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  header nav {
+    display: none;
+  }
+  .bars {
+    cursor: pointer;
+    display: block !important;
+  }
+  header .bars .bx {
+    font-size: 40px;
+  }
+  .slide-box {
+    display: block;
+    position: fixed;
+    margin: 100px auto 0;
+    padding: 0px 50px;
+    width: 100%;
+  
+    z-index: 6;
+  
+    animation: slideLeft 0.6s ease-out forwards;
+  }
+  .slide-box ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 30px 25px;
+    /* width: 250px; */
+    /* height: 150px; */
+    background: white;
+    transition: all 0.3s linear;
+  }
+  @keyframes slideLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  .slide-box ul li a {
+    color: black;
+    transition: all 0.3s linear;
+  }
+  .slide-box ul li:nth-last-child(1) a {
+    padding: 3px 20px;
+    border-radius: 2px;
+    background-color: #d81324;
+    color: white;
+  }
+  .slide-box ul li:nth-last-child(1) a:hover {
+    background-color: #b6111e;
+    color: white !important;
+  }
+  .slide-box ul li a:hover {
+    color: #d81324;
+    transition: all 0.3s linear;
+  }
+}

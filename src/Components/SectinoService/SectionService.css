@@ -1,0 +1,65 @@
+#service {
+  width: 100%;
+  margin: 80px 0px;
+}
+#service h2 {
+  font-family: var(--f-barlow);
+  font-size: 16px;
+  color: #d81324;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+#service h3 {
+  font-family: var(--f-barlow);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0b2154;
+  font-size: 36px;
+  text-align: center;
+}
+
+#service .service-cards .bx {
+  font-size: 48px;
+  color: #d81324 !important;
+}
+
+#service .service-cards {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 25px;
+}
+#service .service-cards .service-card {
+  padding: 48px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f2f2f2;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+#service .service-cards .service-card:hover {
+  background-color: #3e3b3b26;
+  transition: all 0.3s linear;
+}
+.service-card p {
+  margin-bottom: 0px;
+  font-size: 1rem;
+  font-family: var(--f-barlow);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0b2154;
+}
+@media only screen and (max-width: 880px) {
+  #service .service-cards {
+    grid-template-columns: 2fr 2fr;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #service .service-cards {
+    grid-template-columns: 2fr;
+  }
+}
