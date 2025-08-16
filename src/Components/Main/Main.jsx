@@ -6,6 +6,8 @@ import SectionAbout from "../SectionAbout/SectionAbout";
 import VerticalTabs from "../SectionTabs/SectionTabs";
 import SectionLocation from "../SectionLocation/SectionLocation";
 import SectionTabsTwo from "../SectionTabsTwo/SectionTabsTwo";
+import SectionCount from "../SectionCount/SectionCount";
+
 import Footer from "../Footer/Footer";
 const Main = () => {
   return (
@@ -14,10 +16,11 @@ const Main = () => {
       <SectionIntro />
       <SectionService />
       <SectionAbout />
+      <SectionCount />
       {/*<VerticalTabs/>*/}
       <SectionTabsTwo />
       <SectionLocation />
-      <Footer/>
+      <Footer />
     </>
   );
 };
