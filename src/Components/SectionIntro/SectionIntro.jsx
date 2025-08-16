@@ -44,8 +44,8 @@ const SectionIntro = () => {
                     <h2>// Ремонт автомобилей //</h2>
                     <h1>Ремонт автомобиля в рассрочку</h1>
                     <div className="btn">
-                      <a href="#">УЗНАТЬ БОЛЬШЕ</a>
-                      <a href="#">
+                      <a href="tel:+998977387275">УЗНАТЬ БОЛЬШЕ</a>
+                      <a href="tel:+998977387275">
                         <i class="bx bx-right-arrow-alt"></i>
                       </a>
                     </div>
@@ -64,8 +64,8 @@ const SectionIntro = () => {
                     <h2>// Ремонт автомобилей //</h2>
                     <h1>Помощь на дороге</h1>
                     <div className="btn">
-                      <a href="#">УЗНАТЬ БОЛЬШЕ</a>
-                      <a href="#">
+                      <a href="tel:+998977387275">УЗНАТЬ БОЛЬШЕ</a>
+                      <a href="tel:+998977387275">
                         <i class="bx bx-right-arrow-alt"></i>
                       </a>
                     </div>
@@ -84,8 +84,8 @@ const SectionIntro = () => {
                     <h2>// Ремонт автомобилей //</h2>
                     <h1>Автозапчасти лучшего качества</h1>
                     <div className="btn">
-                      <a href="#">УЗНАТЬ БОЛЬШЕ</a>
-                      <a href="#">
+                      <a href="tel:+998977387275">УЗНАТЬ БОЛЬШЕ</a>
+                      <a href="tel:+998977387275">
                         <i class="bx bx-right-arrow-alt"></i>
                       </a>
                     </div>

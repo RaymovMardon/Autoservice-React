@@ -28,15 +28,15 @@ const SectionTabsTwo = () => {
                     </p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Качественное Обслуживание</p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Опытные Специалисты</p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Современное Оборудование</p>
                   </div>
                 </div>
@@ -57,15 +57,15 @@ const SectionTabsTwo = () => {
                     </p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Качественное Обслуживание</p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Опытные Специалисты</p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Современное Оборудование</p>
                   </div>
                 </div>
@@ -86,15 +86,15 @@ const SectionTabsTwo = () => {
                     </p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Качественное Обслуживание</p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Опытные Специалисты</p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Современное Оборудование</p>
                   </div>
                 </div>
@@ -114,15 +114,15 @@ const SectionTabsTwo = () => {
                     </p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Качественное Обслуживание</p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Опытные Специалисты</p>
                   </div>
                   <div>
-                    <img src={img10} alt="" />
+                    <img src={img10} alt="check" />
                     <p>Современное Оборудование</p>
                   </div>
                 </div>
