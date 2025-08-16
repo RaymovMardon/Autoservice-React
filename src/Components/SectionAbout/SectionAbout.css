@@ -105,3 +105,8 @@
     width: 85vw;
   }
 }
+@media only screen and (max-width: 400px) {
+  #about .about-left .baground-about {
+    margin: 0px;
+  }
+}
