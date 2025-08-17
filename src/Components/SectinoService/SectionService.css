@@ -31,7 +31,54 @@
   grid-template-columns: 2fr 2fr 2fr;
   gap: 25px;
 }
-#service .service-cards .service-card {
+.service-cards .service-card {
+  height: 144px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.service-cards .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.service-cards .card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+/*.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 48px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  backface-visibility: hidden;
+}
+*/
+.service-cards .card-front {
+  font-size: 0.9rem;
+}
+
+.service-cards .card-back {
+  transform: rotateY(180deg);
+  background-color: #e0e0e0;
+}
+
+#service .service-cards .service-card .card-front,
+.card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
   padding: 48px 24px;
   display: flex;
   align-items: center;
@@ -40,13 +87,13 @@
   transition: all 0.3s linear;
   cursor: pointer;
 }
-#service .service-cards .service-card:hover {
+#service .service-cards .service-card .card-inner :hover:not(p, i) {
   background-color: #3e3b3b26;
   transition: all 0.3s linear;
 }
 .service-card p {
   margin-bottom: 0px;
-  font-size: 1rem;
+  font-size: 1rem !important;
   font-family: var(--f-barlow);
   font-weight: 700;
   line-height: 1.2;
