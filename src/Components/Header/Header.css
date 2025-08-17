@@ -45,8 +45,8 @@ header nav ul li:nth-child(1) a {
 header .header-wrap .bars {
   display: none;
 }
-.slide-box{
-    display: none;
+.slide-box {
+  display: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -66,9 +66,9 @@ header .header-wrap .bars {
     margin: 100px auto 0;
     padding: 0px 50px;
     width: 100%;
-  
+
     z-index: 6;
-  
+
     animation: slideLeft 0.6s ease-out forwards;
   }
   .slide-box ul {
@@ -110,5 +110,29 @@ header .header-wrap .bars {
   .slide-box ul li a:hover {
     color: #d81324;
     transition: all 0.3s linear;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .slide-box ul li:nth-last-child(1) a {
+    font-size: 18px;
+    padding: 3px 10px;
+  }
+
+  .slide-box ul {
+    font-size: 18px;
+
+    padding: 30px 5px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .slide-box ul li:nth-last-child(1) a {
+    font-size: 14px;
+    padding: 3px 5px;
+  }
+
+  .slide-box ul {
+    font-size: 16px;
+    gap: 12px;
+    padding: 30px 5px;
   }
 }

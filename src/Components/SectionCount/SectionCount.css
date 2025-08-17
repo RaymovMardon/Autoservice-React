@@ -17,7 +17,7 @@
   height: 100%;
   gap: 50px;
   position: absolute;
-  z-index: 50;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,6 +28,11 @@
 }
 #section_count .section_absolute h2 {
   color: white;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2rem;
 }
 #section_count .section_absolute .section_count_wrp div {
   text-align: center;
@@ -39,6 +44,10 @@
 #section_count .section_count_wrp h6 {
   color: white;
   font-size: 24px;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
 }
 #section_count .section_count_wrp span {
   color: #d81324;
@@ -87,9 +96,13 @@
     width: 90%;
   }
   #section_count .section_absolute h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: -0.5rem;
   }
   #section_count .section_count_relative {
     padding: 0;
+  }
+  #section_count .section_absolute .section_count_wrp div {
+    margin: 0px 0 10px;
   }
 }
